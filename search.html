@@ -3,40 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Search Page</title>
+  <title>Search Box</title>
   <style>
     body {
       margin: 0;
       height: 100vh;
-      display: grid;
-      place-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background: linear-gradient(135deg, #1e3a8a, #2563eb);
       font-family: Arial, sans-serif;
     }
-    .search-container {
+    .search-card {
       background: white;
-      padding: 30px;
+      padding: 40px;
       border-radius: 12px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.2);
       text-align: center;
       width: 100%;
       max-width: 400px;
     }
-    h1 {
+    h2 {
       margin-bottom: 20px;
       color: #1e3a8a;
     }
     input[type="text"] {
-      width: 80%;
+      width: 100%;
       padding: 12px;
+      margin-bottom: 20px;
       border: 1px solid #ccc;
       border-radius: 8px;
       font-size: 16px;
-      outline: none;
     }
     button {
-      margin-top: 16px;
-      padding: 10px 20px;
+      width: 100%;
+      padding: 12px;
       background-color: #2563eb;
       color: white;
       border: none;
@@ -51,12 +52,13 @@
   </style>
 </head>
 <body>
-  <div class="search-container">
-    <h1>Search</h1>
-    <form action="/search" method="GET">
-      <input type="text" name="query" placeholder="Type your search..." required />
-      <br />
-      <button type="submit">Search</button>
+  <div class="search-card">
+    <h2>Search Anything</h2>
+    <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+      <!-- Optional: prevent spam -->
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="text" name="search" placeholder="Type your query..." required />
+      <button type="submit">Submit</button>
     </form>
   </div>
 </body>
