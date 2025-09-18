@@ -43,10 +43,14 @@
       margin-bottom: 18px;
     }
     .logo {
-      width: 64px; height: 64px; border-radius: 16px;
-      background: conic-gradient(from 180deg at 50% 50%, #60a5fa, #a78bfa, #34d399, #60a5fa);
-      position: relative;
-      box-shadow: 0 10px 30px rgba(79,70,229,0.35);
+      
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.35);
+
+
     }
     .logo::after {
       content: "";
@@ -116,9 +120,9 @@
   </style>
 </head>
 <body>
-  <main class="card" role="main" aria-labelledby="title">
-    <div class="logo-wrap" aria-hidden="true">
-      <img src="Downloads/apeclogo.png" alt="Your Company Logo" class="logo" />
+  <div class="logo-wrap" aria-hidden="true">
+  <img src="apeclogo.png" alt="Your Company Logo" class="logo" />
+</div>
 
       <!-- Replace with your <img src="logo.png" alt="Your Company Logo" class="logo"> -->
       
